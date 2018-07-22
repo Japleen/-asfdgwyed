@@ -1,9 +1,12 @@
 
+
+/* video container CSS */
 .vid-container{
   position:relative;
   height:100vh;
   overflow:hidden;
 }
+/* video tag CSS */
 .bgvid{
   position:absolute;
   left:0;
@@ -11,27 +14,146 @@
   width:100vw;
   z-index: -1;
 }
+/* main div container CSS */
 .container-fluid{
     width:102%;
+    font-family: 'Open Sans';
+   /* font-size: 22px; */
 }
-.border-fist-row{
+/* set the Size of first Row */
+.size-fist-row{
     /* border: 1px solid red; */
     height: 20%;
     width: 100%;
 }
-.border-second-row{
+/* set the Size of 2nd Row */
+.size-second-row{
     /* border: 1px solid red; */
     height: 60%;
     width: 100%;
 }
-.border-third-row{
+/* set the Size of 3rd Row */
+.size-third-row{
     /* border: 1px solid red; */
     height: 20%;
     width: 100%;
 }
+/* to create vertical line between button */
 .divider{
-    border-right:1px solid gray;
+    text-align: right;
+    /* border-right:1px solid gray; */
 }
+/* set 100% width of middle row */
 .col-md-6{
     height: 100%;
+}
+/* Default CSS of all button */
+.btn{
+    width: 40% !important;
+    margin-left: 20px !important;
+    margin-bottom: 20px !important;
+    height: 13% !important;
+    border-radius: 16px !important;
+    color: white;
+    outline: none !important;
+    
+}
+/* button activehover and focus CSS */
+.btn:hover , .btn:focus, .btn:active.focus{
+    color: white !important;
+    outline: none !important;
+}
+/* Background color for reddit Button */
+.reddit-color{
+    background-color: #ff8a00;
+}
+/* Background color for twitter Button */
+.twitter-color{
+    background-color: #1da1f2;
+}
+/* Background color for transparent Button */
+.transparent-color{
+    background-color:transparent !important;
+    border: 1.5px solid white !important;
+}
+/* Background color for google Button */
+.google-color{
+    background-color: #db4437;
+}
+/* Background color for facebook Button */
+.facebook-color{
+    background-color: #3b5998;
+}
+/* Background gradient color for instagram Button */
+.instagram-color{
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important; 
+    background: -webkit-linear-gradient(120deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%) !important; 
+    background: linear-gradient(0deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%) !important; 
+}
+/* Follow Us layout alignment */
+.follow-us-css{
+    padding-right:30px;
+}
+/* SEND button CSS */
+.send-btn{
+    color:black;
+    border: 1px solid black !important;
+    width: 20% !important;
+    height: 11% !important;
+    margin-left: 157px !important;
+    font-size:18px !important;
+}
+.send-btn:hover{
+    color:black !important;
+}
+/* email Image CSS */
+img{
+     float: left;
+     padding-left: 10px;
+     height: 40px;
+     transform: rotate(15deg);
+} 
+/* Email Text CSS */
+.email{
+    position: relative;
+    text-align: center;
+    left: -22px;
+    top:7px;
+}
+/* input default CSS */
+input{
+
+    width: 40% !important;
+    margin-left: 20px !important;
+    margin-bottom: 20px !important;
+    height: 10% !important;
+    border-radius: 16px !important;
+    background: transparent !important;
+    border:  1.5px solid white !important;
+    color: white !important;
+    outline: none !important;
+
+}
+/* social media icon alignment */
+.fa{
+    float: left;
+    font-size:30px !important;
+    padding-left: 20px;
+
+}
+::-webkit-input-placeholder { /* Chrome */
+  color: white !important;
+  padding-left:10px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: white !important;
+  padding-left:10px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: white !important;
+  opacity: 1;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: white !important;
+  opacity: 1;
 }
