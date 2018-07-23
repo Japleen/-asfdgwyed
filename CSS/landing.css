@@ -29,7 +29,7 @@
 /* set the Size of 2nd Row */
 .size-second-row{
     /* border: 1px solid red; */
-    margin-top: 2%;
+    margin-top: 5%;
     height: 60%;
     width: 100%;
 }
@@ -93,6 +93,7 @@
 }
 /* Follow Us layout alignment */
 .follow-us-css{
+    text-align: center !important;
     padding-right:30px;
 }
 /* SEND button CSS */
