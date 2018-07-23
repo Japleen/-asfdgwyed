@@ -1,5 +1,10 @@
 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="/JS/landing.js"></script>
+
 
 <link rel="stylesheet" href="./CSS/landing.css">
 <!-- Latest compiled and minified CSS -->
@@ -7,6 +12,8 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
       crossorigin="anonymous">
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+
 <!-- ont-awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -19,12 +26,16 @@
     
       <div class="container-fluid">
         <!-- 1st row -->
-        <div class="row size-fist-row"></div>
+        <div class="row size-fist-row">
+        <div class="image-style col-md-2">
+          <img src="/assets/image/Transparent_New_Logo.png">
+        </div>
+        </div>
         <!-- 2nd row -->
         <div class="row size-second-row">
           <div class="col-md-6 divider">
 
-            <button type="button" class="btn btn-lg button-custom-css facebook-color">
+            <button type="button" class="btn btn-lg button-custom-css facebook-color" onclick="displayPopup();">
               <span class="fa fa-facebook" ></span>
               <span class="follow-us-css" >Follow Us</span>
             </button>
@@ -50,15 +61,15 @@
               <span class="fa fa-twitter"></span>
               <span class="follow-us-css">Follow Us</span>
             </button><br/>
-            <button type="button" class="btn btn-lg button-custom-css transparent-color">
-              <img src="./assets/image/email.png"> 
-              <span class="email">Email</span> 
+            <button id = "emailButton" type="button" class="btn btn-lg button-custom-css transparent-color">
+              <img src="./assets/image/email.png" class="email-icon"> 
+              <span class="email">Follow Us</span> 
             </button><br/>
 
-            <form>
+            <form id="emailForm"> 
 
               <div class="form-group">
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                <input type="email" class="form-control" id="email" placeholder="Enter email">
               </div>
 
               <div class="form-group">

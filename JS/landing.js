@@ -9,7 +9,7 @@ function postRequest (){
     
     var message;
     var http = new XMLHttpRequest();
-    var url = 'https://jsonplaceholder.typicode.com/posts';  // Server URL
+    var url = 'https://jsonplaceholder.typicode.com/posts';        // Server URL
     //var params = 'orem=ipsum&name=binny';
     http.open('POST', url, true);
     
@@ -19,16 +19,26 @@ function postRequest (){
     console.log(http.responseText)
     http.onreadystatechange = function() {//Call a function when the state changes.
         if(http.readyState == 4 && http.status == 200) {
-            alert(http.responseText);
             message="Thank you for subscribing to Sonderblu newsletter, we will keep you in touch!";
+            alert(message);
+
+        }
+        else if(http.status == 409) {
+            message="It seems you have been already subscribed to our news!";
+            alert(message);
+
+        }
+        else if(http.status !== 500) {
+            message="We are experiencing temporary technical difficulties, please try again later";
+            alert(message);
+
         }
     }
-    http.send(data);
-    
-    
-    }
+    http.send(JSON.stringify(data));
+ }
 
     function displayPopup(){
+        console.log("here")
 var modal = document.getElementById('myModal');
 
 // Get the button that opens the modal
@@ -53,4 +63,15 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
-    }
+}
+
+$(document).ready(function(e){
+
+    $("#emailForm").hide();
+
+    $('#emailButton').click(function(){
+        $("#emailForm").show();
+
+    });
+
+});
