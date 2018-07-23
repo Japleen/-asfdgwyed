@@ -1,4 +1,6 @@
 
+<script src="/JS/landing.js"></script>
+
 <link rel="stylesheet" href="./CSS/landing.css">
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" 
@@ -11,7 +13,7 @@
 <div class="vid-container">
 
     <video class="bgvid" autoplay="autoplay" muted="muted" preload="auto" loop>
-      <source src="http://mazwai.com/system/posts/videos/000/000/005/original/marc_lorenz--sky_cloudy_time-lapse.mp4?1400445691" 
+      <source src="/assets/video/Raindrops.mp4" 
               type="video/webm">
     </video>
     
@@ -56,20 +58,33 @@
             <form>
 
               <div class="form-group">
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
               </div>
 
               <div class="form-group">
-                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
+                <input type="text" class="form-control" id="name" placeholder="Name">
               </div>
 
               
-              <button type="submit" class="btn send-btn">Join Us</button>
+              <button type="button" class="btn send-btn" onclick="postRequest();">Join Us</button>
               
               
             </form>
 
           </div>
+
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+          </div>
+
+          </div>
+
+
         </div>
         <!-- 3rd row -->
         <div class="row size-third-row"></div>
