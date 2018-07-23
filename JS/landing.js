@@ -5,7 +5,7 @@ function postRequest (){
     var data={};
     data.email=email;
     data.name=name;
-    console.log(data)
+    //console.log(data)
     
     var message;
     var http = new XMLHttpRequest();
@@ -16,28 +16,32 @@ function postRequest (){
     //Send the proper header information along with the request
     http.setRequestHeader('Content-type', 'application/json');
     
-    console.log(http.responseText)
+   // console.log(http.responseText)
     http.onreadystatechange = function() {//Call a function when the state changes.
         if(http.readyState == 4 && http.status == 200) {
             message="Thank you for subscribing to Sonderblu newsletter, we will keep you in touch!";
             displayPopup(message);
         }
-        else if(http.status == 409) {
+        else if(http.readyState == 4 && http.status == 409) { // conflict
             message="It seems you have been already subscribed to our news!";
             displayPopup(message);
 
         }
-        else if(http.status !== 500) {
+        else if(http.readyState == 4 && http.status !== 500) { 
             message="We are experiencing temporary technical difficulties, please try again later";
             displayPopup(message);
 
         }
     }
+    if(data.email && data.name){
     http.send(JSON.stringify(data));
+    }
  }
 
-    function displayPopup(message){
-        console.log("here")
+    
+
+function displayPopup(message){
+      //  console.log("here")
 var modal = document.getElementById('myModal');
 
 // Get the button that opens the modal
