@@ -20,37 +20,39 @@ function postRequest (){
     http.onreadystatechange = function() {//Call a function when the state changes.
         if(http.readyState == 4 && http.status == 200) {
             message="Thank you for subscribing to Sonderblu newsletter, we will keep you in touch!";
-            alert(message);
-
+            displayPopup(message);
         }
         else if(http.status == 409) {
             message="It seems you have been already subscribed to our news!";
-            alert(message);
+            displayPopup(message);
 
         }
         else if(http.status !== 500) {
             message="We are experiencing temporary technical difficulties, please try again later";
-            alert(message);
+            displayPopup(message);
 
         }
     }
     http.send(JSON.stringify(data));
  }
 
-    function displayPopup(){
+    function displayPopup(message){
         console.log("here")
 var modal = document.getElementById('myModal');
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+//var btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
-btn.onclick = function() {
+
     modal.style.display = "block";
-}
+      //  $(#mod)
+      $('#modalPara').text(message);
+
+
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {

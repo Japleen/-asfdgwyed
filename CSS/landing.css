@@ -29,6 +29,7 @@
 /* set the Size of 2nd Row */
 .size-second-row{
     /* border: 1px solid red; */
+    margin-top: 2%;
     height: 60%;
     width: 100%;
 }
@@ -177,7 +178,8 @@ input{
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 40%;
+    height: 8%;
 }
 
 /* The Close Button */
@@ -207,6 +209,11 @@ button{
     display: "none";
 }
 .image-style{
+    margin-top:-54px;
     height:10%;
     width:10%;
 }
+.orient{
+    padding-left: 1%;
+}
+
