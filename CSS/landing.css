@@ -13,6 +13,7 @@
   top:0;
   width:100vw;
   z-index: -1;
+  opacity: 50%;
 }
 /* main div container CSS */
 .container-fluid{
@@ -94,7 +95,6 @@
 /* Follow Us layout alignment */
 .follow-us-css{
     vertical-align:middle !important ;
-
     text-align: center !important;
     /* padding-right:20px; */
 }
