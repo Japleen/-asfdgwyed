@@ -20,7 +20,7 @@
 <div class="vid-container">
 
     <video class="bgvid" autoplay="autoplay" muted="muted" preload="auto" loop>
-      <source src="http://mazwai.com/system/posts/videos/000/000/005/original/marc_lorenz--sky_cloudy_time-lapse.mp4?1400445691" 
+      <source src="http://mazwai.com/#/videos/218" 
               type="video/webm">
     </video>
     
@@ -60,9 +60,10 @@
               <span class="fa fa-twitter"></span>
               <span class="follow-us-css">Follow Us</span>
             </button><br/>
-            <button id = "emailButton" type="button" class="btn btn-lg button-custom-css transparent-color">
-              <img src="./assets/image/email.png" class="email-icon"> 
-              <span class="email">Follow Us</span> 
+            <button id = "emailButton" type="button" class="btn btn-lg button-custom-css transparent-color email-icon">
+              <!-- <img src="./assets/image/email.png" class="email-icon">  -->
+              <span class="fa fa-envelope"></span>
+              <span class="follow-us-css">Follow Us</span> 
             </button><br/>
 
             <form id="emailForm"> 
@@ -75,7 +76,7 @@
                 <input type="text" class="form-control" id="name" placeholder="Name" required>
               </div>
 
-              <button type="button" class="btn send-btn" onclick="postRequest();">Follow Us</button>
+              <button type="button" class="btn send-btn" onclick="postRequest();">Follow</button>
               </form>
 
           </div>
@@ -86,7 +87,7 @@
           <!-- Modal content -->
           <div class="modal-content">
             <span class="close">&times;</span>
-            <p id="modalPara"> Some text in the Modal..</p>
+            <p id="modalPara"></p>
           </div>
 
           </div>
