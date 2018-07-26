@@ -99,7 +99,7 @@
 @media (max-width:470px) {
   button {
       font-size: 0px !important;
-      width: 100%;
+      /* width: 100%; */
       text-align: center;
   }
 
@@ -108,7 +108,6 @@
       float: none !important;
    }
 }
-
 
 /* Background color for reddit Button */
 .reddit-color{
