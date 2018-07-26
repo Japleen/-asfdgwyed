@@ -8,8 +8,8 @@
 
 <link rel="stylesheet" href="./CSS/landing.css">
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" 
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+<link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
       crossorigin="anonymous">
 <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
@@ -20,10 +20,10 @@
 <div class="vid-container">
 
     <video class="bgvid" autoplay="autoplay" muted="muted" preload="auto" loop>
-      <source src="http://mazwai.com/system/posts/videos/000/000/005/original/marc_lorenz--sky_cloudy_time-lapse.mp4?1400445691" 
+      <source src="http://mazwai.com/system/posts/videos/000/000/005/original/marc_lorenz--sky_cloudy_time-lapse.mp4?1400445691"
               type="video/webm">
     </video>
-    
+
       <div class="container-fluid">
         <!-- 1st row -->
         <div class="row size-fist-row">
@@ -33,51 +33,55 @@
         </div>
         <!-- 2nd row -->
         <div class="row size-second-row">
-          <div class="col-md-6 divider">
-            <button type="button" class="btn btn-lg button-custom-css facebook-color">
-              <span class="fa fa-facebook fa-fw" ></span>
-              <span class="follow-us-css" >Follow Us</span>
-            </button>
-            <br/>
-            <button type="button" class="btn btn-lg button-custom-css instagram-color">
-              <span class="fa fa-instagram fa-fw"></span>
-              <span class="follow-us-css">Follow Us</span>
-            </button>
-            <br/>
-            <button type="button" class="btn btn-lg button-custom-css google-color">
-              <span class="fa fa-google-plus fa-fw"></span>
-              <span class="follow-us-css">Follow Us</span>
-            </button>
-            <br/>    
-        </div>
+          <div class="col-md-6 col-sm-12 divider col-md-offset-3 ">
+            <!-- <div class="container container1 "> -->
+              <button type="button" class="btn btn-block btn-lg button-custom-css facebook-color">
+                <i class="fa fa-facebook fa-fw"></i>
+                <span class="follow-us-css">Follow Us</span>
+              </button>
+              <br/>
+              <button type="button" class="btn btn-lg button-custom-css instagram-color">
+                <i class="fa fa-instagram fa-fw"></i>
+                <span class="follow-us-css">Follow Us</span>
+              </button>
+              <br/>
+              <button type="button" class="btn btn-lg button-custom-css google-color">
+                <i class="fa fa-google-plus fa-fw"></i>
+                <span class="follow-us-css">Follow Us</span>
+              </button>
+              <br/>
+            <!-- </div> -->
+            <!-- <div class="container container2"> -->
+              <button type="button" class="btn btn-lg button-custom-css reddit-color">
+                <i class="fa fa-reddit fa-fw"></i>
+                <span class="follow-us-css">Follow Us</span>
+              </button>
+              <br/>
+              <button type="button" class="btn btn-lg button-custom-css twitter-color">
+                <i class="fa fa-twitter fa-fw"></i>
+                <span class="follow-us-css">Follow Us</span>
+              </button>
+              <br/>
+              <button id="emailButton" type="button" class="btn btn-lg button-custom-css transparent-color email-icon">
+                <!-- <img src="./assets/image/email.png" class="email-icon">  -->
+                <i class="fa fa-envelope fa-fw"></i>
+                <span class="follow-us-css">Follow Us</span>
+              </button>
+              <br/>
 
-          <div class="col-md-6 orient">
-            <button type="button" class="btn btn-lg button-custom-css reddit-color">
-              <span class="fa fa-reddit fa-fw"></span>
-              <span class="follow-us-css">Follow Us</span>
-            </button><br/>
-            <button type="button" class="btn btn-lg button-custom-css twitter-color">
-              <span class="fa fa-twitter fa-fw"></span>
-              <span class="follow-us-css">Follow Us</span>
-            </button><br/>
-            <button id = "emailButton" type="button" class="btn btn-lg button-custom-css transparent-color email-icon">
-              <!-- <img src="./assets/image/email.png" class="email-icon">  -->
-              <span class="fa fa-envelope fa-fw"></span>
-              <span class="follow-us-css">Follow Us</span> 
-            </button><br/>
+              <form id="emailForm">
 
-            <form id="emailForm"> 
+                <div class="form-group">
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                </div>
 
-              <div class="form-group">
-                <input type="email" class="form-control" id="email" placeholder="Enter email" required>
-              </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="name" placeholder="Name" required>
+                </div>
 
-              <div class="form-group">
-                <input type="text" class="form-control" id="name" placeholder="Name" required>
-              </div>
-
-              <button type="button" class="btn send-btn" onclick="postRequest();">Follow</button>
+                <button type="button" class="btn send-btn" onclick="postRequest()">Follow</button>
               </form>
+            <!-- </div> -->
 
           </div>
 
@@ -95,7 +99,7 @@
 
         </div>
         <!-- 3rd row -->
-        <div class="row size-third-row"></div>
-        
+        <!-- <div class="row size-third-row"></div> -->
+
       </div>
 </div>
