@@ -76,7 +76,6 @@ $(document).ready(function(e){
     $("#emailForm").hide();
 
     $('#emailButton').click(function(){
-      alert();
         $("#emailForm").show();
 
     });

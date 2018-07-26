@@ -9,7 +9,7 @@
   margin:0;
   left: 0px;
   top: 0px;
-  z-index: -1000;
+  /* z-index: -1000; */
   overflow:hidden;
 }
 
