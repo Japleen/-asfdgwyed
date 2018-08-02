@@ -98,8 +98,7 @@
 
 @media (max-width:470px) {
   button {
-      font-size: 0px !important;
-      /* width: 100%; */
+      font-size: 0px !important;      
       text-align: center;
   }
 
@@ -155,7 +154,7 @@
     border: 1px solid black !important;
     width: 20% !important;
     height: 11% !important;
-    margin-left: 157px !important;
+    /* margin-left: 157px !important; */
     font-size:18px !important;
 }
 .send-btn:hover{
@@ -270,4 +269,32 @@ img{
 }
 .orient{
     padding-left: 1%;
+}
+/* Form CSS */
+.form-common-css{
+
+    margin-right:0 !important; 
+}
+#emailForm{
+    margin-top: 4%;
+}
+@media (max-width:470px) {
+  .responsive-btn {
+      font-size: 20px !important;
+      width: 85px !important;
+  }
+  .btn, input{
+      width: 170px !important;
+      /* overflow: auto; */
+      /* margin: 2% !important; */
+  }
+
+}
+@media (max-width:408px) {
+
+  /* .btn, input{
+      margin: 2% !important;
+      //float: left; 
+  } */
+
 }

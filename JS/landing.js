@@ -1,12 +1,26 @@
-function postRequest (){
-    var name=document.getElementById("name").value;
-    var email=document.getElementById("email").value;
+
+
+
+ // baseUrl.on('value',function (snap){
+ //
+ //   console.log(snap.val().User_01.user_name);
+ //   // console.log(snap.child("user_login_details").key);
+ //   document.getElementById("name").value = snap.val().User_01.user_name;
+ //   // snap.forEach(function(childSnapshot) {
+ //   //   console.log(childSnapshot.val());
+ //   // });
+ //
+ // });
+function postRequest(){
+
+
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
 
     var data={};
     data.email=email;
     data.name=name;
     //console.log(data)
-
     var message;
     var http = new XMLHttpRequest();
     var url = 'https://jsonplaceholder.typicode.com/posts';        // Server URL
@@ -59,7 +73,7 @@ var span = document.getElementsByClassName("close")[0];
 
 
 // When the user clicks on <span> (x), close the modal
-i.onclick = function() {
+span.onclick = function() {
     modal.style.display = "none";
 }
 
